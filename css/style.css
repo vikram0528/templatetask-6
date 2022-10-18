@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+ :root{
+	 --lightblue:#f8fbfe;
+	 --blue:#124265;
+	 --gray:#6c757d;
+ }
+ .nav-item a{
+	color: #124265; 
+ }
+ .nav button{
+	color: #124265; 
+ }
+.nav-item a:hover{
+	color:blue;
+}
+.logo a{
+	font-family: 'Poppins', sans-serif;
+	color: blue;
+}
+.button button{
+	width:100px;
+	font-size:14px;
+}
+.nav{
+	font-size: 14px;
+	color:black;
+}
+
+.section-ban{
+	background-image:url("../image/hero-bg.jpg");
+	background-attachment:fixed;
+	background-size:cover;
+	background-repeat: no-repeat;
+	height:auto;
+}
+
+.banner-content{
+	padding:80px 0px;
+}
+.sec-blue{
+	background-color: var(--lightblue);
+}
+
+
+.btn{
+	width:150px;
+    margin:0 auto;
+	
+}
+
+.ban-boxs{
+	flex-wrap:nowrap;
+	justify-content: space-around;
+}
+
+.ban-box1{
+	background-color: white;
+    padding:25px 20px 10px 25px;
+    border-radius:3%;
+	 transition:all 0.5s 0.5s ease-in-out;
+}
+.box-icon i{
+	font-size:35px;
+	color:  #2487ce;
+}
+.ban-box1 h5{
+	color: #124265;
+}
+.ban-box1:hover {
+transform:scale(1.1);
+}
+.ban-box1-h5{
+	transition:all 0s 0.5s ease;
+}
+.ban-box1-h5:hover .ban-box1{
+	color:  #2487ce;
+}
+.title h3{
+	color:#124265;
+}
+.no-1 span{
+	font-size:50px;
+	color:var(--blue);
+	font-weight:bold;
+}
+.no-1 p
+{
+	
+    color: #1e6ca6;
+}
+
+.title {
+	font-size: 15px;	
+}
+.abt-video h4{
+	color:var(--blue);
+}
+.abt-video i{
+	color:var(--blue);
+}
+
+.client img{
+	width:45%;
+	filter:grayscale(10);
+	transition:all 1s 0.5s ease;
+}
+.client img:hover{
+	filter:grayscale(0);
+	transform:scale(1.5)
+}
+.testi-box{
+	background-color: var(--lightblue);
+}
+.testi-box i{
+	 color: #c9e3f5;
+}
+.testi-img img{
+	width:90px;
+	height:90px;
+}
+.ser-div{
+	font-size:20px;
+}
+.card {
+	font-size:12px;
+}
+.btn-2{
+	border: 2px solid white;
+}
+
+.type-li{
+	display:inline-block;
+} 
+.type-li a{
+	color:black;
+}
+.type-li a:hover{
+ color:blue;
+}
+.gallery-img{
+	column-count: 3;
+	height: 1097.33px;
+}
+.team-link{
+	width:100%;
+	background: rgba(255, 255, 255, 0.85);
+	opacity:0;
+	transition:all  0.5s ease;
+}
+.team:hover .team-link{
+	opacity:1;
+	
+	
+}
+.price-div p{
+    color:#124265;
+}
+.price-div h5{
+	color:var(--blue);
+}
+.map-icon {
+    color: #2487ce;
+    width: 44px;
+    height: 44px;
+    background-color: #e3f0fa;
+}
+.map-icon:hover{
+	background-color:#2487ce;
+	color:white;
+}
+.sec-info{
+	 box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.play-btn{
+transform:traslatey(-50%);
+width:90px;
+height:90px;
+background: radial-gradient(#2487ce 50%, rgba(36, 135, 206, 0.4) 52%);
+overflow:hidden;
+
+}
+.play-btn a:hover{
+	width:60px;
+	height:60px;
+	transform:scale(1.5);
+}
+.play-btn a {
+	width:60px;
+	height:60px;
+	background-color: #0a58ca;
+	line-height:60px;
+	transition: all 2s ease 0s;
+}
+.play-btn a icon-02
+{
+    transition-duration: 0.5s;
+    transform: scale(0);
+    transition-timing-function: ease-in-out;
+    opacity: 1;
+}
+.play-btn a i:hover {
+	transform:scale(15);
+	opacity:0;
+	transition-duration:0.5s;
+}
+
+.play-btn::after{
+	content:"";
+	position:absolute;
+	width:75px;
+	height:75px;
+	border: 2px solid #0a58ca;
+	border-radius:100%;
+	transition: all 3s ease;
+	box-sizing:border-box;
+	animation-name: flow;
+	animation-duration:2s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease;
+	transform:scale(0);
+}
+@keyframes flow{
+	0%{
+		transform:scale(0);
+	}
+	100%{
+		transform:scale(1.3);
+	}
+}
